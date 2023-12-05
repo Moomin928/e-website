@@ -2,19 +2,29 @@ import { cart } from "../js/cart.js"
 import { products } from "../js/product.js"
 import { removeFromCart } from "../js/cart.js"
 
+
 let cartSummaryHTML = '';
+
+let totalSummaryHTML = '';
+
 let shoppingSummaryHTML = '';
 cart.forEach((cartItem) => {
 	const productId = cartItem.productId;
 
 	let matchingProduct;
 	let shoppingProduct;
+
 	products.forEach((product) => {
 		if (product.id === productId) {
 			matchingProduct = product;
 			shoppingProduct = product;
+
 		}
 	});
+
+
+
+
 
 
 	cartSummaryHTML +=
@@ -67,10 +77,22 @@ cart.forEach((cartItem) => {
 			`
 
 });
+
+cart.forEach((cartItem) => {
+	cartQuantity += cartItem.quantity;
+});
+document.querySelector('.js-cart-quantity')
+	.innerHTML = cartQuantity;
+
+
+
+
+
+
+
+
 document.querySelector(' .js-shopping-summary')
 	.innerHTML = shoppingSummaryHTML;
-
-
 document.querySelector(' .js-order-summary')
 	.innerHTML = cartSummaryHTML;
 document.querySelectorAll('.js-delete-link')

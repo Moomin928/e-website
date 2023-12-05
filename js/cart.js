@@ -28,4 +28,14 @@ export function removeFromCart(productId) {
 export function saveToStorage() {
 	localStorage.setItem('cart', JSON.stringify(cart));
 }
+export function addFromShopping(productId) {
+	const newCart = [];
+	cart.forEach((cartItem) => {
+		if (cartItem.productId === productId) {
+			newCart.push(cartItem);
+		}
+	});
+	cart = newCart;
+	saveToStorage();
+}
 
