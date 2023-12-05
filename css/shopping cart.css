@@ -140,395 +140,117 @@ body {
 }
 
 /* shopping cart list setting*/
-.shopping-cartlist {
+.cart-item {
     display: inline-block;
 }
 
-.shopping-cartlist-headline {
+.cart-item-headline {
     margin-top: 20px;
 
 }
 
-.shopping-cartlist-headline>h2 {
+.cart-item-headline>h2 {
     color: white;
     font-family: 'Orbitron', sans-serif;
     font-size: 38px;
     margin-left: 60px
 }
 
-.shopping-cartlist>.shopping-cartlist-box {
+.order-summary {
     background: rgba(0, 0, 0, 0.34);
     width: 730px;
     height: 1450px;
     margin-left: 60px;
     margin-top: 20px;
+    margin-bottom: 100px;
 
 }
 
-.shopping-cartlist-box {
+.cart-item-container {
     display: inline-block;
 }
 
-.shopping-cartlist-box .shopping-cartlist1 {
+.cart-item-container .cart-item-box {
     width: 639px;
-    height: 182px;
+    height: 300px;
     background: #FFF;
     margin-top: 50px;
     margin-left: 40px;
     display: flex;
 }
 
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist1>.Gamename {
-    margin-top: -20px;
-    margin-left: -10px;
+.cart-item-container .delivery-date {
+    color: green;
+    font-size: 24px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-family: 'Alumni Sans';
 }
 
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist1>.Gamename a {
+.cart-item-box .cart-item-details-grid {
+    margin-top: 5rem;
+    margin-left: -13.5rem;
+
+}
+
+.cart-item-details .product-name {
+    margin-top: -11rem;
+    margin-left: 12rem;
     color: black;
     font-family: 'Orbitron', sans-serif;
-    font-size: 24px;
-    font-weight: bolder;
+    font-size: 20px;
 }
 
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist1>.platformname {
-    margin-top: 90px;
-    margin-left: -210px;
+.cart-item-details .product-price {
+    margin-left: 33rem;
+    margin-top: 8rem;
+    color: red;
+    font-weight: bold;
 }
 
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist1>.platformname a {
+.product-platformname {
+    margin-top: -3rem;
+    margin-left: 12rem;
+
+}
+
+
+.product-platformname a {
     color: black;
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 12px;
 }
 
-.shopping-cartlist-box .tresh-icon {
-    margin-top: 150px;
-    margin-left: -120px;
-    font-family: 'Alumni Sans';
-    font-size: 14px;
-    font-weight: 400;
-    display: flex;
+.product-quantity {
+    margin-top: 0.5rem;
 }
 
-.shopping-cartlist-box .tresh-icon a {
+.update-quantity-link {
+    color: blue;
+    margin-left: 0.5rem;
+}
+
+.delete-quantity-link {
+    color: blue;
+    margin-left: 0.5rem;
+}
+
+.product-quantity-container {
     color: black;
-    font-family: 'Alumni Sans';
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 5px;
-}
-
-.shopping-cartlist1 .item {
-    color: #395DA2;
     font-family: 'Orbitron', sans-serif;
     font-size: 15px;
     font-weight: 900;
-    margin-top: 150px;
-    margin-left: 300px;
+    margin-left: 12rem;
 }
 
-/*shopping-cartlist2 setting*/
-.shopping-cartlist-box .shopping-cartlist2 {
-    width: 639px;
-    height: 182px;
-    background: #FFF;
-    margin-top: 50px;
-    margin-left: 40px;
-    display: flex;
-}
 
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist2>.Gamename {
-    margin-top: -20px;
-    margin-left: -10px;
-}
 
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist2>.Gamename a {
-    color: black;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 24px;
-    font-weight: bolder;
-}
 
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist2>.platformname {
-    margin-top: 90px;
-    margin-left: -300px;
 
-}
 
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist2>.platformname a {
-    color: black;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-}
 
-.shopping-cartlist-box .tresh-icon {
-    margin-top: 150px;
 
-    font-family: 'Alumni Sans';
-    font-size: 14px;
-    font-weight: 400;
-    display: flex;
-}
-
-.shopping-cartlist-box .tresh-icon a {
-    color: black;
-    font-family: 'Alumni Sans';
-    font-size: 14px;
-    font-weight: lighter;
-
-}
-
-.shopping-cartlist2 .item {
-    color: #395DA2;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 15px;
-    font-weight: 900;
-    margin-left: 300px;
-    margin-top: 150px;
-
-}
-
-/*shopping-cartlist3 setting*/
-.shopping-cartlist-box .shopping-cartlist3 {
-    width: 639px;
-    height: 182px;
-    background: #FFF;
-    margin-top: 50px;
-    margin-left: 40px;
-    display: flex;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist3>.Gamename {
-    margin-top: -20px;
-    margin-left: -10px;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist3>.Gamename a {
-    color: black;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 24px;
-    font-weight: bolder;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist3>.platformname {
-    margin-top: 90px;
-    margin-left: -240px;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist3>.platformname a {
-    color: black;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-}
-
-.shopping-cartlist-box .tresh-icon {
-    margin-top: 150px;
-    margin-left: -120px;
-    font-family: 'Alumni Sans';
-    font-size: 14px;
-    font-weight: 400;
-    display: flex;
-}
-
-.shopping-cartlist-box .tresh-icon a {
-    color: black;
-    font-family: 'Alumni Sans';
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 5px;
-}
-
-.shopping-cartlist3 .item {
-    color: #395DA2;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 15px;
-    font-weight: 900;
-    margin-top: 150px;
-    margin-left: 300px;
-}
-
-/*shopping-cartlist4 setting*/
-.shopping-cartlist-box .shopping-cartlist4 {
-    width: 639px;
-    height: 182px;
-    background: #FFF;
-    margin-top: 50px;
-    margin-left: 40px;
-    display: flex;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist4>.Gamename {
-    margin-top: -20px;
-    margin-left: -10px;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist4>.Gamename a {
-    color: black;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 24px;
-    font-weight: bolder;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist4>.platformname {
-    margin-top: 90px;
-    margin-left: -210px;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist4>.platformname a {
-    color: black;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-}
-
-.shopping-cartlist-box .tresh-icon {
-    margin-top: 150px;
-    margin-left: -120px;
-    font-family: 'Alumni Sans';
-    font-size: 14px;
-    font-weight: 400;
-    display: flex;
-}
-
-.shopping-cartlist-box .tresh-icon a {
-    color: black;
-    font-family: 'Alumni Sans';
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 5px;
-}
-
-.shopping-cartlist4 .item {
-    color: #395DA2;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 15px;
-    font-weight: 900;
-    margin-top: 150px;
-    margin-left: 300px;
-}
-
-/*shopping-cartlist5 setting*/
-.shopping-cartlist-box .shopping-cartlist5 {
-    width: 639px;
-    height: 182px;
-    background: #FFF;
-    margin-top: 50px;
-    margin-left: 40px;
-    display: flex;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist5>.Gamename {
-    margin-top: -20px;
-    margin-left: -10px;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist5>.Gamename a {
-    color: black;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 24px;
-    font-weight: bolder;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist5>.platformname {
-    margin-top: 90px;
-    margin-left: -330px;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist5>.platformname a {
-    color: black;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-}
-
-.shopping-cartlist-box .tresh-icon {
-    margin-top: 150px;
-    margin-left: -120px;
-    font-family: 'Alumni Sans';
-    font-size: 14px;
-    font-weight: 400;
-    display: flex;
-}
-
-.shopping-cartlist-box .tresh-icon a {
-    color: black;
-    font-family: 'Alumni Sans';
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 5px;
-}
-
-.shopping-cartlist5 .item {
-    color: #395DA2;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 15px;
-    font-weight: 900;
-    margin-top: 150px;
-    margin-left: 300px;
-}
-
-/*shopping-cartlist6 setting*/
-.shopping-cartlist-box .shopping-cartlist6 {
-    width: 639px;
-    height: 182px;
-    background: #FFF;
-    margin-top: 50px;
-    margin-left: 40px;
-    display: flex;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist6>.Gamename {
-    margin-top: -20px;
-    margin-left: -10px;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist6>.Gamename a {
-    color: black;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 24px;
-    font-weight: bolder;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist6>.platformname {
-    margin-top: 90px;
-    margin-left: -300px;
-}
-
-.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist6>.platformname a {
-    color: black;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-}
-
-.shopping-cartlist-box .tresh-icon {
-    margin-top: 150px;
-    margin-left: -120px;
-    font-family: 'Alumni Sans';
-    font-size: 14px;
-    font-weight: 400;
-    display: flex;
-}
-
-.shopping-cartlist-box .tresh-icon a {
-    color: black;
-    font-family: 'Alumni Sans';
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 5px;
-}
-
-.shopping-cartlist6 .item {
-    color: #395DA2;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 15px;
-    font-weight: 900;
-    margin-top: 150px;
-    margin-left: 300px;
-}
 
 /*shopping information setting*/
 .shopping-info {
@@ -583,7 +305,7 @@ body {
     font-family: 'Alumni Sans';
     font-size: 20px;
     margin-top: -25px;
-    margin-left: 480px;
+    margin-left: 460px;
 }
 
 .shopping-info-box>.gift-card {
@@ -832,6 +554,7 @@ label {
     margin-top: 80px;
     margin-left: 50px;
     border-radius: 30px;
+    margin-bottom: 50px;
 
 }
 

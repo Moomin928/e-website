@@ -1,322 +1,311 @@
 :root {
-    --blue: #395da2;
-    --red: #ed1c24;
+  --blue: #395da2;
+  --red: #ed1c24;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 header {
-    width: 1440px;
-    height: 90px;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 2.2%;
-    background-color: black;
+  width: 1440px;
+  height: 90px;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2.2%;
+  background-color: black;
 }
 
 .icons a:hover {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 .logo {
-    color: #395DA2;
-    font-weight: bolder;
-    font-size: 50px;
-    font-style: normal;
-    font-family: 'Orbitron', sans-serif;
+  color: #395da2;
+  font-weight: bolder;
+  font-size: 50px;
+  font-style: normal;
+  font-family: "Orbitron", sans-serif;
 }
 
 .LOGO a:hover {
-    color: var(--red);
+  color: var(--red);
 }
 
 .searchbar {
-    border-radius: 30px;
-    background: #D9D9D9;
-    width: 368px;
-    height: 43px;
-    margin-left: 600px;
-    flex-shrink: 0;
-    padding: 10px;
+  border-radius: 30px;
+  background: #d9d9d9;
+  width: 368px;
+  height: 43px;
+  margin-left: 600px;
+  flex-shrink: 0;
+  padding: 10px;
 }
 
 .searchbar :nth-child(1) {
-    margin-top: 4px;
-    margin-left: 10px;
-    color: black;
+  margin-top: 4px;
+  margin-left: 10px;
+  color: black;
 }
 
 .icons :nth-child(1) {
-    color: white;
-    font-size: 30px;
+  color: white;
+  font-size: 30px;
 }
 
 .icons :nth-child(2) {
-    color: white;
-    font-size: 28px;
-    padding-left: 20px;
+  color: white;
+  font-size: 28px;
+  padding-left: 20px;
 }
 
 .icons :nth-child(3) {
-    color: white;
-    font-size: 28px;
-    padding-left: 20px;
+  color: white;
+  font-size: 28px;
+  padding-left: 20px;
 }
 
 .nav {
-    width: 1440px;
-    height: 57px;
-    margin-top: 0px;
-    background: rgba(0, 0, 0, 0.29);
+  width: 1440px;
+  height: 57px;
+  margin-top: 0px;
+  background: rgba(0, 0, 0, 0.29);
 }
 
 .nav li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .ul .nav a:hover {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 .nav li a:hover {
-    color: var(--red);
+  color: var(--red);
 }
 
 .menu {
-    display: inline-block;
-    justify-content: space-between;
-    text-align: center;
-    color: #FFF;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding: 0 2.0rem;
-    margin-top: 14px;
+  display: inline-block;
+  justify-content: space-between;
+  text-align: center;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 2rem;
+  margin-top: 14px;
 }
 
 .back {
-    margin-left: 20px;
-    font-size: 20px;
-    padding: 20px;
-
+  margin-left: 20px;
+  font-size: 20px;
+  padding: 20px;
 }
 
-.back>a {
-    color: white;
-    font-family: 'Alumni Sans', sans-serif;
-
+.back > a {
+  color: white;
+  font-family: "Alumni Sans", sans-serif;
 }
 
-.back>a:hover {
-    color: var(--red);
+.back > a:hover {
+  color: var(--red);
 }
 
 body {
-    background: #202020 no-repeat;
-    width: 1440px;
-    height: 900px;
+  background: #202020 no-repeat;
+  width: 1440px;
+  height: 900px;
 }
 
 .console-menu {
-    display: flex;
-    margin-top: 215px;
-    margin-left: 100px;
-    justify-content: space-between;
-    margin-right: 100px;
-    padding: 0 auto;
-
+  display: flex;
+  margin-top: 215px;
+  margin-left: 100px;
+  justify-content: space-between;
+  margin-right: 100px;
+  padding: 0 auto;
 }
 
-.console-menu>.console-box {
-    background: #000;
-    border-radius: 38px;
-    border: 1px solid #000;
-    width: 400px;
-    height: 400px;
+.console-menu > .console-box {
+  background: #000;
+  border-radius: 38px;
+  border: 1px solid #000;
+  width: 400px;
+  height: 400px;
 }
 
 .console-box img {
-    position: absolute;
-    top: 498px;
-    left: 180px;
+  position: absolute;
+  top: 498px;
+  left: 180px;
 }
 
-.console-menu>.console-box1 {
-    background: #000;
-    border-radius: 38px;
-    width: 400px;
-    height: 400px;
+.console-menu > .console-box1 {
+  background: #000;
+  border-radius: 38px;
+  width: 400px;
+  height: 400px;
 }
 
 .console-box1 img {
-    position: absolute;
-    top: 495px;
-    left: 605px;
+  position: absolute;
+  top: 495px;
+  left: 605px;
 }
 
-.console-menu>.console-box2 {
-    background: #000;
-    border-radius: 38px;
-    width: 400px;
-    height: 400px;
+.console-menu > .console-box2 {
+  background: #000;
+  border-radius: 38px;
+  width: 400px;
+  height: 400px;
 }
 
 .console-box2 img {
-    position: absolute;
-    top: 495px;
-
+  position: absolute;
+  top: 495px;
 }
 
 .Name {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 2rem;
-
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
 }
 
-.Name>.sony {
-    margin-left: 100px;
-    margin-top: 20px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 40px;
+.Name > .sony {
+  margin-left: 100px;
+  margin-top: 20px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 40px;
 }
 
-.Name>.sony>a {
-    color: white;
+.Name > .sony > a {
+  color: white;
 }
 
-.Name>.sony>a:hover {
-    color: var(--red);
+.Name > .sony > a:hover {
+  color: var(--red);
 }
 
-.Name>.xbox {
-    margin-right: 50px;
-    margin-top: 15px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 48px;
+.Name > .xbox {
+  margin-right: 50px;
+  margin-top: 15px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 48px;
 }
 
-.Name>.xbox>a {
-    color: white;
+.Name > .xbox > a {
+  color: white;
 }
 
-.Name>.xbox>a:hover {
-    color: var(--red);
+.Name > .xbox > a:hover {
+  color: var(--red);
 }
 
-.Name>.nintendo {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 40px;
-    margin-top: 15px;
-    margin-right: 190px;
+.Name > .nintendo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 40px;
+  margin-top: 15px;
+  margin-right: 190px;
 }
 
-.Name>.nintendo>a {
-    color: white;
+.Name > .nintendo > a {
+  color: white;
 }
 
-.Name>.nintendo>a:hover {
-    color: var(--red);
+.Name > .nintendo > a:hover {
+  color: var(--red);
 }
 
 .other {
-    background: #395DA2;
-    border-radius: 24px;
-    width: 468px;
-    height: 80px;
-    box-shadow: -2px 11px 4px 0px rgba(0, 0, 0, 0.25);
-    margin-left: 500px;
-    margin-top: 200px;
-    padding-top: 20px;
+  background: #395da2;
+  border-radius: 24px;
+  width: 468px;
+  height: 80px;
+  box-shadow: -2px 11px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 500px;
+  margin-top: 200px;
+  padding-top: 20px;
 }
 
-
-
 .other a {
-    color: #FFF;
-    margin-left: 65px;
-    padding-top: 80px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 31px;
-    margin-top: 200px;
+  color: #fff;
+  margin-left: 65px;
+  padding-top: 80px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 31px;
+  margin-top: 200px;
 }
 
 .other a:hover {
-    color: var(--red);
+  color: var(--red);
 }
 
-
 .box a {
-    color: white;
-
-
+  color: white;
 }
 
 .footer {
-    background: #000;
-    width: 1440px;
-    margin-top: 300px;
+  background: #000;
+  width: 1440px;
+  margin-top: 300px;
 }
 
 .footer .box-container {
-    display: flex;
-    flex-direction: row;
-    width: 1440px;
-    height: 300px;
-    background-color: black;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Alumni Sans', sans-serif;
-    padding-top: 82px;
+  display: flex;
+  flex-direction: row;
+  width: 1440px;
+  height: 300px;
+  background-color: black;
+  justify-content: center;
+  text-align: center;
+  font-family: "Alumni Sans", sans-serif;
+  padding-top: 82px;
 }
 
 .box {
-    color: white;
-    font-size: 20px;
-    padding-left: 80px;
+  color: white;
+  font-size: 20px;
+  padding-left: 80px;
 }
 
 .box a {
-    color: white;
+  color: white;
 }
 
 svg:hover path {
-    fill: red;
+  fill: red;
 }
 
 .box-container a {
-    margin-top: 150px;
-    margin-left: 5px;
+  margin-top: 150px;
+  margin-left: 5px;
 }
 
 .box a:hover {
-    color: var(--red);
+  color: var(--red);
 }
 
 .credit {
-    background-color: black;
-    text-align: center;
-    color: white;
-    font-family: 'Alumni Sans', sans-serif;
-    font-size: 20px;
-    width: 1440px;
-    font-weight: 100;
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 20px;
+  width: 1440px;
+  font-weight: 100;
 }
