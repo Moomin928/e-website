@@ -1,11 +1,11 @@
 import { cart } from "../js/cart.js"
-import { products } from "../js/product.js"
+import { products } from "../js/data/cartdata.js"
 import { removeFromCart } from "../js/cart.js"
 
 
 let cartSummaryHTML = '';
 
-let totalSummaryHTML = '';
+
 
 let shoppingSummaryHTML = '';
 cart.forEach((cartItem) => {
@@ -77,20 +77,12 @@ cart.forEach((cartItem) => {
 			`
 
 });
-
+let cartQuantity = 0;
 cart.forEach((cartItem) => {
 	cartQuantity += cartItem.quantity;
 });
 document.querySelector('.js-cart-quantity')
 	.innerHTML = cartQuantity;
-
-
-
-
-
-
-
-
 document.querySelector(' .js-shopping-summary')
 	.innerHTML = shoppingSummaryHTML;
 document.querySelector(' .js-order-summary')
