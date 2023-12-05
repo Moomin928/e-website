@@ -149,8 +149,8 @@ products.forEach((product) => {
 `;
 });
 //Generate the Html
-// document.querySelector(".js-products-grid").innerHTML = productsHTML;
-// console.log(productsHTML)
+document.querySelector(".js-products-grid").innerHTML = productsHTML;
+ console.log(productsHTML)
 //add the quantity number for the cart
 document.querySelectorAll(".js-add-to-cart").forEach((button) => {
   button.addEventListener(`click`, () => {
