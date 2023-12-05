@@ -1,0 +1,895 @@
+:root {
+    --blue: #395da2;
+    --red: #ed1c24;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 1440px;
+    height: 90px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2.2%;
+    background-color: black;
+}
+
+body {
+    background: #202020 no-repeat;
+    width: 1440px;
+    height: 1200px;
+    background-size: cover;
+}
+
+
+
+.icons a:hover {
+    color: var(--blue);
+}
+
+.logo {
+    color: #395DA2;
+    font-weight: bolder;
+    font-size: 50px;
+    font-style: normal;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.LOGO a:hover {
+    color: var(--red);
+}
+
+.searchbar {
+    border-radius: 30px;
+    background: #D9D9D9;
+    width: 368px;
+    height: 43px;
+    margin-left: 600px;
+    flex-shrink: 0;
+    padding: 10px;
+}
+
+.searchbar :nth-child(1) {
+    margin-top: 4px;
+    margin-left: 10px;
+    color: black;
+}
+
+.icons :nth-child(1) {
+    color: white;
+    font-size: 30px;
+}
+
+.icons :nth-child(2) {
+    color: white;
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+.icons :nth-child(3) {
+    color: white;
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+.nav {
+    width: 1440px;
+    height: 57px;
+    margin-top: 0px;
+    background: rgba(0, 0, 0, 0.29);
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.ul .nav a:hover {
+    color: var(--blue);
+}
+
+.nav li a:hover {
+    color: var(--red);
+}
+
+.menu {
+    display: inline-block;
+    justify-content: space-between;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0 2.0rem;
+    margin-top: 14px;
+}
+
+
+.shopping-cart-menu .back {
+    margin-left: 0px;
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+.back>a {
+    color: white;
+    font-family: 'Alumni Sans', sans-serif;
+
+}
+
+.back>a:hover {
+    color: var(--red);
+}
+
+/* shopping cart list setting*/
+.shopping-cartlist {
+    display: inline-block;
+}
+
+.shopping-cartlist-headline {
+    margin-top: 20px;
+
+}
+
+.shopping-cartlist-headline>h2 {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 38px;
+    margin-left: 60px
+}
+
+.shopping-cartlist>.shopping-cartlist-box {
+    background: rgba(0, 0, 0, 0.34);
+    width: 730px;
+    height: 1450px;
+    margin-left: 60px;
+    margin-top: 20px;
+
+}
+
+.shopping-cartlist-box {
+    display: inline-block;
+}
+
+.shopping-cartlist-box .shopping-cartlist1 {
+    width: 639px;
+    height: 182px;
+    background: #FFF;
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist1>.Gamename {
+    margin-top: -20px;
+    margin-left: -10px;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist1>.Gamename a {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist1>.platformname {
+    margin-top: 90px;
+    margin-left: -210px;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist1>.platformname a {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.shopping-cartlist-box .tresh-icon {
+    margin-top: 150px;
+    margin-left: -120px;
+    font-family: 'Alumni Sans';
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+}
+
+.shopping-cartlist-box .tresh-icon a {
+    color: black;
+    font-family: 'Alumni Sans';
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 5px;
+}
+
+.shopping-cartlist1 .item {
+    color: #395DA2;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+/*shopping-cartlist2 setting*/
+.shopping-cartlist-box .shopping-cartlist2 {
+    width: 639px;
+    height: 182px;
+    background: #FFF;
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist2>.Gamename {
+    margin-top: -20px;
+    margin-left: -10px;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist2>.Gamename a {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist2>.platformname {
+    margin-top: 90px;
+    margin-left: -300px;
+
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist2>.platformname a {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.shopping-cartlist-box .tresh-icon {
+    margin-top: 150px;
+
+    font-family: 'Alumni Sans';
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+}
+
+.shopping-cartlist-box .tresh-icon a {
+    color: black;
+    font-family: 'Alumni Sans';
+    font-size: 14px;
+    font-weight: lighter;
+
+}
+
+.shopping-cartlist2 .item {
+    color: #395DA2;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    margin-left: 300px;
+    margin-top: 150px;
+
+}
+
+/*shopping-cartlist3 setting*/
+.shopping-cartlist-box .shopping-cartlist3 {
+    width: 639px;
+    height: 182px;
+    background: #FFF;
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist3>.Gamename {
+    margin-top: -20px;
+    margin-left: -10px;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist3>.Gamename a {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist3>.platformname {
+    margin-top: 90px;
+    margin-left: -240px;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist3>.platformname a {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.shopping-cartlist-box .tresh-icon {
+    margin-top: 150px;
+    margin-left: -120px;
+    font-family: 'Alumni Sans';
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+}
+
+.shopping-cartlist-box .tresh-icon a {
+    color: black;
+    font-family: 'Alumni Sans';
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 5px;
+}
+
+.shopping-cartlist3 .item {
+    color: #395DA2;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+/*shopping-cartlist4 setting*/
+.shopping-cartlist-box .shopping-cartlist4 {
+    width: 639px;
+    height: 182px;
+    background: #FFF;
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist4>.Gamename {
+    margin-top: -20px;
+    margin-left: -10px;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist4>.Gamename a {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist4>.platformname {
+    margin-top: 90px;
+    margin-left: -210px;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist4>.platformname a {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.shopping-cartlist-box .tresh-icon {
+    margin-top: 150px;
+    margin-left: -120px;
+    font-family: 'Alumni Sans';
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+}
+
+.shopping-cartlist-box .tresh-icon a {
+    color: black;
+    font-family: 'Alumni Sans';
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 5px;
+}
+
+.shopping-cartlist4 .item {
+    color: #395DA2;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+/*shopping-cartlist5 setting*/
+.shopping-cartlist-box .shopping-cartlist5 {
+    width: 639px;
+    height: 182px;
+    background: #FFF;
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist5>.Gamename {
+    margin-top: -20px;
+    margin-left: -10px;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist5>.Gamename a {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist5>.platformname {
+    margin-top: 90px;
+    margin-left: -330px;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist5>.platformname a {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.shopping-cartlist-box .tresh-icon {
+    margin-top: 150px;
+    margin-left: -120px;
+    font-family: 'Alumni Sans';
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+}
+
+.shopping-cartlist-box .tresh-icon a {
+    color: black;
+    font-family: 'Alumni Sans';
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 5px;
+}
+
+.shopping-cartlist5 .item {
+    color: #395DA2;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+/*shopping-cartlist6 setting*/
+.shopping-cartlist-box .shopping-cartlist6 {
+    width: 639px;
+    height: 182px;
+    background: #FFF;
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist6>.Gamename {
+    margin-top: -20px;
+    margin-left: -10px;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist6>.Gamename a {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist6>.platformname {
+    margin-top: 90px;
+    margin-left: -300px;
+}
+
+.shopping-cartlist>.shopping-cartlist-box>.shopping-cartlist6>.platformname a {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.shopping-cartlist-box .tresh-icon {
+    margin-top: 150px;
+    margin-left: -120px;
+    font-family: 'Alumni Sans';
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+}
+
+.shopping-cartlist-box .tresh-icon a {
+    color: black;
+    font-family: 'Alumni Sans';
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 5px;
+}
+
+.shopping-cartlist6 .item {
+    color: #395DA2;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+/*shopping information setting*/
+.shopping-info {
+    margin-top: -1485px;
+    margin-left: 820px;
+}
+
+.shopping-info .shopping-info-headline h2 {
+    color: white;
+    font-family: 'Orbitron';
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.shopping-info .shopping-info-box {
+    border-radius: 17px;
+    background: #FFF;
+    width: 553px;
+    height: 450px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.shopping-info-box .shopping-itemlist {
+    border: 1px solid #000;
+    width: 524px;
+    height: 46px;
+    margin-left: 14px;
+    margin-top: 12px;
+}
+
+.shopping-itemlist>.itemname {
+
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.shopping-itemlist>.itemname a {
+    color: black;
+    font-family: 'Alumni Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+.shopping-itemlist>.price {
+    color: black;
+    font-family: 'Alumni Sans';
+    font-size: 20px;
+    margin-top: -25px;
+    margin-left: 480px;
+}
+
+.shopping-info-box>.gift-card {
+    color: black;
+    font-family: 'Alumni Sans';
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+.shopping-info-box>.gift-cardbox {
+
+    margin-left: 15px;
+    border: 1px solid #000;
+    width: 250px;
+    height: 36px;
+
+}
+
+.shopping-info-box>.gift-cardbox>.gift-cardnum {
+    color: #000;
+    font-family: 'Alumni Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5px;
+    margin-left: 9px;
+}
+
+.shopping-info-box>.shipping {
+    color: black;
+    margin-top: -30px;
+    margin-left: 300px;
+    font-family: 'Alumni Sans';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.shopping-info-box>.Total {
+    color: black;
+    margin-top: -30px;
+    margin-left: 420px;
+    font-family: 'Alumni Sans';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/*payment information setting*/
+.payment .payment-info h2 {
+    color: #FFF;
+    font-family: 'Orbitron';
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.payment .payment-box {
+    width: 553px;
+    height: 230px;
+    border-radius: 26px;
+    background: #FFF;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 25px;
+    padding-top: 10px;
+
+}
+
+label {
+    color: #000;
+    font-family: 'Alumni Sans';
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 15px;
+
+}
+
+/*delivery option setting*/
+.delivery .delivery-info h2 {
+    color: white;
+    font-family: 'Orbitron';
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.delivery .deliverybox {
+    background: white;
+    border-radius: 26px;
+    width: 553px;
+    height: 353px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.delivery .deliverybox .address h4 {
+    color: #000;
+    font-family: 'Alumni Sans';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 18px;
+    margin-left: 25px;
+}
+
+.deliverybox .address-detail pre {
+    margin-top: 2px;
+    color: #000;
+    font-family: 'Alumni Sans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 8px;
+}
+
+.delivery .deliverybox .phone h4 {
+    color: #000;
+    font-family: 'Alumni Sans';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 25px;
+    margin-top: -30px;
+}
+
+.delivery .deliverybox .phonenum {
+    color: #000;
+    font-family: 'Alumni Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.delivery .deliverybox .email h4 {
+    color: #000;
+    font-family: 'Alumni Sans';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 25px;
+}
+
+.delivery .deliverybox .email .emailadress {
+    color: #000;
+    font-family: 'Alumni Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 28px;
+    margin-top: 2px;
+}
+
+.delivery .deliverybox .deliverytype h4 {
+    color: #000;
+    font-family: 'Alumni Sans';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 300px;
+    margin-top: -310px;
+}
+
+.delivery .deliveryselection .optionbox1 {
+    border-radius: 15px;
+    border: 5px solid #000;
+    background: linear-gradient(0deg, #212121 0%, #212121 100%), #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 115px;
+    height: 94px;
+    margin-left: 350px;
+    margin-top: -70px;
+}
+
+.delivery .deliveryselection input[type="radio"] {
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.delivery .deliveryselection .optionbox1 svg {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.delivery .deliveryselection .optionname {
+    margin-top: 10px;
+    margin-left: 270px;
+    color: #000;
+    text-align: center;
+    font-family: 'Alumni Sans';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.delivery .deliveryselection .optionbox2 {
+    border-radius: 15px;
+    border: 5px solid #000;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 350px;
+    margin-top: -70px;
+    width: 118px;
+    height: 97px;
+
+}
+
+.delivery .deliveryselection .optionbox2 svg {
+    margin-top: 15px;
+    margin-left: 32px;
+}
+
+/* check out button setting*/
+.delivery button {
+    background: #395DA2;
+    width: 442px;
+    height: 78px;
+    margin-top: 80px;
+    margin-left: 50px;
+    border-radius: 30px;
+
+}
+
+.delivery a {
+    color: white;
+    text-align: center;
+    font-family: 'Orbitron';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.delivery a:hover {
+    color: var(--red);
+}
+
+.footer .box-container {
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    height: 300px;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Alumni Sans', sans-serif;
+    padding-top: 82px;
+}
+
+.box {
+    color: white;
+    font-size: 20px;
+    padding-left: 80px;
+}
+
+.box a {
+    color: white;
+}
+
+svg:hover path {
+    fill: red;
+}
+
+.box-container a {
+    margin-top: 150px;
+    margin-left: 5px;
+}
+
+.box a:hover {
+    color: var(--red);
+}
+
+.credit {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 20px;
+    width: 1440px;
+    font-weight: 100;
+}
