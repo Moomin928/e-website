@@ -2,7 +2,7 @@
 import { heart } from "../js/cart.js"
 import { cart } from "../js/cart.js"
 import { saveToStorage } from "../js/cart.js"
-import { products } from "./data/cartdata.js";
+import { products } from "../js/cartdata.js"
 
 
 let productsHTML = "";
@@ -45,8 +45,8 @@ products.forEach((product) => {
 });
 //Generate the Html
 
-document.querySelector('.js-products-grid').innerHTML = productsHTML;
-console.log(productsHTML)
+// document.querySelector('.js-products-grid').innerHTML = productsHTML;
+// console.log(productsHTML)
 //add the quantity number for the cart
 document.querySelectorAll(".js-add-to-cart").forEach((button) => {
   button.addEventListener(`click`, () => {

@@ -18,25 +18,25 @@ html {
 }
 
 header {
-    width: 1440px;
-    height: 90px;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
+    height: 10%;
+    background-color: black;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 2.2%;
-    background-color: black;
 }
 
 body {
-    background: #202020 no-repeat;
-    width: 1440px;
-    height: 1200px;
-    background-size: cover;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
 
+    /*delete later*/
+    background-color: rgb(0, 0, 0);
+}
 
 
 .icons a:hover {
@@ -47,8 +47,9 @@ body {
     color: #395DA2;
     font-weight: bolder;
     font-size: 50px;
-    font-style: normal;
     font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    margin-left: 30px;
 }
 
 .LOGO a:hover {
@@ -71,6 +72,14 @@ body {
     color: black;
 }
 
+.searchbar input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #D9D9D9;
+}
+
 .icons :nth-child(1) {
     color: white;
     font-size: 30px;
@@ -88,38 +97,59 @@ body {
     padding-left: 20px;
 }
 
-.nav {
-    width: 1440px;
+.nav .toggleButton {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 21px;
+    margin-top: 13px;
+    margin-right:-10.5px;
+    
+
+
+}
+
+.nav .toggleButton .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nav .nav-bar ul {
     height: 57px;
-    margin-top: 0px;
     background: rgba(0, 0, 0, 0.29);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0 30px 0 30px;
+    gap: 30px;
+
+
 }
 
-.nav li {
-    display: inline-block;
+ul {
+    margin: 0;
+    padding: 0;
 }
 
-.ul .nav a:hover {
-    color: var(--blue);
+ul a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
 }
 
 .nav li a:hover {
     color: var(--red);
 }
 
-.menu {
-    display: inline-block;
-    justify-content: space-between;
-    text-align: center;
-    color: #FFF;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding: 0 2.0rem;
-    margin-top: 14px;
-}
+
 
 
 .shopping-cart-menu .back {
@@ -182,36 +212,34 @@ body {
 .cart-item-container .delivery-date {
     color: green;
     font-size: 24px;
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 20px;
     font-family: 'Alumni Sans';
 }
 
 .cart-item-box .cart-item-details-grid {
-    margin-top: 5rem;
-    margin-left: -13.5rem;
+    margin-top: 60px;
+    margin-left: -220px;
 
 }
 
 .cart-item-details .product-name {
-    margin-top: -11rem;
-    margin-left: 12rem;
+    margin-top: -180px;
+    margin-left: 190px;
     color: black;
     font-family: 'Orbitron', sans-serif;
     font-size: 20px;
 }
 
 .cart-item-details .product-price {
-    margin-left: 33rem;
-    margin-top: 8rem;
+    margin-top: 130px;
     color: red;
     font-weight: bold;
+    margin-left: 550px;
 }
 
 .product-platformname {
-    margin-top: -3rem;
-    margin-left: 12rem;
-
+    margin-top: -50px;
+    margin-left: 200px;
 }
 
 
@@ -223,17 +251,18 @@ body {
 }
 
 .product-quantity {
-    margin-top: 0.5rem;
+    margin-left: 200px;
+    margin-top: 15px;
 }
 
 .update-quantity-link {
     color: blue;
-    margin-left: 0.5rem;
+    margin-left: 20px;
+
 }
 
 .delete-quantity-link {
-    color: blue;
-    margin-left: 0.5rem;
+    margin-left: 20px;
 }
 
 .product-quantity-container {
@@ -241,7 +270,7 @@ body {
     font-family: 'Orbitron', sans-serif;
     font-size: 15px;
     font-weight: 900;
-    margin-left: 12rem;
+
 }
 
 
@@ -575,44 +604,424 @@ label {
 .footer .box-container {
     display: flex;
     flex-direction: row;
-    width: 1440px;
-    height: 300px;
+    flex-wrap: wrap;
+    height: 20%;
+    width: 100%;
+    gap: 10px;
     background-color: black;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     font-family: 'Alumni Sans', sans-serif;
-    padding-top: 82px;
 }
 
-.box {
+.footer h3 {
+    color: white;
+    font-size: 25px;
+}
+
+.footer a {
+    text-decoration: none;
     color: white;
     font-size: 20px;
-    padding-left: 80px;
 }
 
-.box a {
+.footer a:hover {
+    color: #ed1c24;
+}
+
+.footer2 {
+    height: 5%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: black;
+}
+
+.footer2 p {
     color: white;
+    font-family: 'Alumni Sans', sans-serif;
+    margin: 0 auto 10px 10px;
 }
 
-svg:hover path {
-    fill: red;
+.footer2 a {
+    margin: 10px;
 }
 
-.box-container a {
-    margin-top: 150px;
-    margin-left: 5px;
+.nav ul {
+    height: 57px;
+    background: rgba(0, 0, 0, 0.29);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0 30px 0 30px;
+    gap: 30px;
 }
 
-.box a:hover {
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+}
+
+.nav li a:hover {
     color: var(--red);
 }
 
-.credit {
-    background-color: black;
-    text-align: center;
-    color: white;
-    font-family: 'Alumni Sans', sans-serif;
-    font-size: 20px;
-    width: 1440px;
-    font-weight: 100;
+
+@media screen and (max-width:500px) {
+
+    .body {
+        width: 100%;
+        height: auto;
+    }
+
+    header {
+        height: 150px;
+    }
+
+    .icons {
+        margin-right: 30px;
+        margin-top: -210px;
+        margin-left: 360px;
+
+    }
+
+    .icons a {
+        text-decoration: none;
+        font-size: 30px;
+        padding-left: 15px;
+        color: white;
+    }
+
+    .icons :nth-child(3) {
+        display: none;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .searchbar {
+        border-radius: 30px;
+        background: #D9D9D9;
+        height: 40px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 10px;
+        margin: auto 30px auto 30px;
+    }
+
+    .searchbar :nth-child(1) {
+        color: black;
+        text-decoration: none;
+        margin-top: -6px;
+
+    }
+
+    .nav .toggleButton {
+        display: flex;
+    }
+
+    .nav {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .nav .nav-bar {
+        margin-top: 20px;
+        padding-left: 20px;
+        border: 0.5px solid black;
+        padding-top: -10px;
+        display: none;
+    }
+
+    .nav .nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin-top: -30px;
+        background: black;
+        height: 600px;
+
+
+
+    }
+
+    .nav-bar ul li {
+        background: grey;
+        width: 300px;
+        height: 200px;
+        box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+
+    }
+
+    .nav-bar ul li a:hover {
+        color: var(--red);
+    }
+
+    .nav ul a {
+        color: white;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .back a {
+        font-size: 10px;
+    }
+
+    .cart-item-headline h2 {
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: -15px;
+    }
+
+    .cart-item-container {
+        margin-top: -30px;
+
+        display: inline-block;
+
+    }
+
+    .cart-item-container .cart-item-box {
+
+        width: 475px;
+        height: 200px;
+        margin-left: -50px;
+
+    }
+
+    .cart-item-box .delivery-date {
+        font-size: 14px;
+        margin-top: 2px;
+        margin-left: 20px;
+    }
+
+    .cart-item-box .cart-item-details-grid img {
+        width: 100px;
+        height: 100px;
+        margin-left: 170px;
+        margin-top: 10px;
+    }
+
+    .cart-item-box .cart-item-details {
+        margin-left: 100px;
+
+    }
+
+    .cart-item-box .cart-item-details-grid .product-name {
+        font-size: 12px;
+        margin-top: -100px;
+
+
+    }
+
+    .cart-item-details .product-platformname {
+        margin-top:
+    }
+
+    .cart-item-details .product-platformname a {
+        font-size: 10px;
+        margin-top: 300px;
+
+
+
+    }
+
+    .cart-item-details .product-price {
+        font-size: 10px;
+    }
+
+    .cart-item-details .product-quantity {
+        font-size: 10px;
+        margin-left: 60px;
+    }
+
+    .cart-item-details .product-quantity-container {
+        font-size: 10px;
+
+    }
+
+    .shopping-info .shopping-info-headline {
+        margin-top: 500px;
+
+    }
+
+    .shopping-info .shopping-info-headline h2 {
+        font-size: 20px;
+        margin-left: -810px;
+
+    }
+
+    .shopping-info .shopping-info-box {
+        margin-top: 30px;
+        margin-left: -820px;
+        width: 475px;
+        height: 236px;
+        border-radius: 0%;
+    }
+
+    .shopping-info-box .shopping-itemlist {
+        width: 470px;
+        margin-left: -2px;
+    }
+
+    .shopping-info-box .shopping-itemlist .itemname a {
+        font-size: 15px;
+
+    }
+
+    .shopping-info-box .shopping-itemlist .price {
+        font-size: 15px;
+
+    }
+
+    .shopping-info-box .shipping {
+        font-size: 15px;
+    }
+
+    .shopping-info-box .totalPriceBox {
+        font-size: 15px;
+        margin-top: 1px;
+
+    }
+
+    .shopping-info-box .totalPriceBox .total {
+        margin-left: -120px;
+    }
+
+    .shopping-info-box .gift-card {
+        font-size: 15px;
+    }
+
+    .payment {
+        margin-left: -805px
+    }
+
+    .payment .payment-info h2 {
+        font-size: 20px;
+
+    }
+
+    .payment .payment-box {
+        width: 475px;
+        margin-left: -15px;
+        border-radius: 0%;
+    }
+
+    .payment .payment-box label {
+        font-size: 18px;
+
+    }
+
+    .delivery {
+        margin-left: -800px;
+
+    }
+
+    .delivery .delivery-info h2 {
+        font-size: 20px;
+    }
+
+    .delivery .deliverybox {
+        width: 475px;
+        margin-left: -20px;
+        border-radius: 0%;
+        height: 280px;
+
+    }
+
+    .delivery .deliverybox .address h4 {
+        font-size: 15px;
+    }
+
+    .delivery .deliverybox .address-detail pre {
+        font-size: 15px;
+    }
+
+    .delivery .deliverybox .phone h4 {
+        font-size: 15px;
+        margin-top: 2px;
+
+    }
+
+    .delivery .deliverybox .phonenum {
+        font-size: 15px;
+    }
+
+    .delivery .deliverybox .email h4 {
+        font-size: 15px;
+    }
+
+    .delivery .deliverybox .email .emailadress {
+        font-size: 15px;
+    }
+
+    .delivery .deliverybox .deliverytype {
+        margin-top: 90px;
+    }
+
+    .delivery .deliverybox .deliverytype h4 {
+        font-size: 15px;
+    }
+
+    .delivery .deliveryselection .optionname {
+        font-size: 10px;
+    }
+
+    .delivery button {
+        font-size: 20px;
+        width: 300px;
+
+    }
+
+    .delivery a {
+        font-size: 20px;
+    }
+
+    .footer h3 {
+        color: white;
+        font-size: 20px;
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+    }
+
+    .footer2 {
+        height: 3%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background-color: black;
+    }
+
+    .footer2 p {
+        color: white;
+        font-family: 'Alumni Sans', sans-serif;
+        margin: 0 auto 10px 10px;
+    }
+
+    .footer2 svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer2 a {
+        margin: 5px;
+    }
+
 }

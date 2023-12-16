@@ -1,5 +1,5 @@
 import { cart } from "../js/cart.js"
-import { products } from "../js/data/cartdata.js"
+import { products } from "../js/cartdata.js"
 
 function getProduct(productId) {
 	let matchingProduct;

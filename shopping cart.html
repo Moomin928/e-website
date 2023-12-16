@@ -30,6 +30,7 @@
         </div>
         <div class="searchbar">
             <a href="#" class="fas fa-search" width="48px" height="48px"></a>
+            <input type="text">
         </div>
         <div class="icons">
             <a href="#" class="fas fa-user"></a>
@@ -43,18 +44,26 @@
     </header>
     <!--header section end -->
     <!--nav section start-->
-    <div class="images">
-        <div class="nav">
-
-            <li><a href="videogame.html" class="menu">VIDEO GAMES</a></li>
-            <li><a href="consoles.html" class="menu">CONSOLES</a></li>
-            <li><a href="#" class="menu">GAMING ACCESSORIES</a></li>
-            <li><a href="#" class="menu">DEALS</a></li>
-            <li><a href="#" class="menu">GIFT CARDS</a></li>
-            <li><a href="#" class="menu">SERVICES</a></li>
-
+    
+    <div class="nav">
+        <a href="#" class="toggleButton" id="toggleButton">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="nav-bar"id="nav-bar">
+            <ul>
+                <li><a href="videogame.html" class="menu">VIDEO GAMES</a></li>
+                <li><a href="consoles.html" class="menu">CONSOLES</a></li>
+                <li><a href="#" class="menu">GAMING ACCESSORIES</a></li>
+                <li><a href="#" class="menu">DEALS</a></li>
+                <li><a href="#" class="menu">GIFT CARDS</a></li>
+                <li><a href="#" class="menu">SERVICES</a></li>
+            </ul>
         </div>
     </div>
+   
     <!--nav section end-->
     <!---shopping cart start-->
     <div class="shopping-cart-menu">
@@ -373,7 +382,7 @@
 </body>
 <script src="js/cartitem.js" type="module"></script>
 <script src="js/paymentSummary.js" type="module"></script>
-
+<script src="js/menu.js"></script>
 
 
 </html>

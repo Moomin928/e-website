@@ -1,5 +1,5 @@
 import { cart } from "../js/cart.js"
-import { products } from "../js/data/cartdata.js"
+import { products } from "../js/cartdata.js"
 import { removeFromCart } from "../js/cart.js"
 
 
@@ -47,7 +47,7 @@ cart.forEach((cartItem) => {
 															$${(matchingProduct.priceCents / 100).toFixed(2)}
 													</div>
 													<div class="product-platformname">
-															<a href="#">Platform: PS5</a>
+															<a href="#">Platform: ${matchingProduct.platForm}</a>
 													</div>
 													<div class="product-quantity">
 															<span class="product-quantity-container">
